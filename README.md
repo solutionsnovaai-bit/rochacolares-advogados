@@ -24,11 +24,11 @@ npm install
 npm run dev
 ```
 
-Execute `npm run build` para gerar `dist/` e `npm run preview` para abrir a versão de produção. Na Vercel, importe esta pasta com o preset Vite. A configuração de rotas já está em `vercel.json`. Em outra hospedagem estática, encaminhe as rotas de navegação para `index.html` e sirva os arquivos de mídia diretamente.
+Execute `npm run build` para gerar `dist/` e `npm run preview` para abrir a versão de produção. Na Vercel, importe o repositório `solutionsnovaai-bit/rochacolares-advogados` a partir da branch `main` e use a raiz do repositório. O arquivo `vercel.json` define o preset Vite, o build e a pasta `dist`. O deploy funciona com as configurações padrão, sem credenciais de serviços externos. Em outra hospedagem estática, encaminhe as rotas de navegação para `index.html` e sirva os arquivos de mídia diretamente.
 
 ## Personalizar
 
-Preencha `src/config/site.ts` com os dados reais do escritório, incluindo identificação profissional e canais de contato. Informe o WhatsApp com DDI e DDD e o endereço do site com HTTPS. Os campos começam vazios. Enquanto os canais estiverem vazios, os botões levam ao contato e o visitante pode copiar a mensagem preparada. O texto da marca no logo vem do arquivo original fornecido.
+O WhatsApp do escritório é +55 (11) 95100-7967. A navegação, a triagem e o formulário usam o mesmo número de `src/config/site.ts`. Para trocar o número, mantenha DDI e DDD. Se ele for removido, os botões levam à seção de contato e o visitante pode copiar a mensagem preparada. O texto da marca no logo vem do arquivo original fornecido.
 
 Edite os temas, etapas e perguntas em `src/content/labor.ts`. Os textos de abertura estão em `src/components/hero/Hero.tsx`. A política de privacidade está em `src/routes/Privacy.tsx` e deve refletir a operação do escritório e da hospedagem escolhida.
 
@@ -42,7 +42,7 @@ O arquivo `design/abertura/Rocha-Colares-Motion.psd` contém a composição em s
 
 ## Privacidade da triagem
 
-Os formulários usam apenas o estado local da página. A abertura explícita do WhatsApp ou do cliente de e-mail transfere o texto para o serviço escolhido. Não há API de envio nem banco de dados nesta aplicação. O indicador do loader é salvo no armazenamento de sessão.
+Os formulários usam apenas o estado local da página. Ao escolher abrir o WhatsApp, o visitante transfere o texto preparado ao aplicativo e decide se deseja enviá-lo. Não há API de envio nem banco de dados nesta aplicação. O indicador do loader é salvo no armazenamento de sessão.
 
 ## Referências do conteúdo
 
