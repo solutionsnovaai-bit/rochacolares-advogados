@@ -1,0 +1,11 @@
+import {Link} from 'react-router-dom'
+import {site} from '../config/site'
+export default function Privacy(){return <div className="utility"><div className="shell"><article>
+<p className="eyebrow"><i/>Privacidade e proteção de dados</p><h1>Sua privacidade.</h1>
+<p>Esta política explica como os dados são tratados durante a navegação, a preparação de um relato e a abertura de um canal de contato.</p>
+<h2>Durante a visita</h2><p>As fontes e imagens são servidas pelo próprio site. A página usa o armazenamento de sessão do navegador para lembrar que a animação de entrada já foi exibida. Essa preferência contém apenas um indicador de visita. O provedor de hospedagem pode manter registros técnicos de acesso, como endereço IP, data e hora, para operar e proteger o serviço.</p>
+<h2>Triagem e formulário</h2><p>As respostas e a mensagem permanecem na memória desta página. Você pode editá-las, copiá-las ou descartá-las. Recarregar a página ou sair desta área encerra o preenchimento. O site não mantém um cadastro desses relatos nem os transmite automaticamente.</p>
+<h2>Ao abrir outro serviço</h2><p>Se você selecionar WhatsApp ou e-mail, o texto preparado será encaminhado ao aplicativo escolhido para compor uma mensagem. O serviço externo passa a tratar o conteúdo conforme suas próprias condições. Você decide se deseja concluir o envio. Copiar o texto o coloca na área de transferência do seu dispositivo.</p>
+<h2>Atendimento e finalidade</h2><p>Quando você envia uma mensagem ao escritório, os dados fornecidos podem ser usados para responder à solicitação, avaliar o atendimento e cumprir obrigações legais e profissionais. A conservação considera a finalidade do contato, o sigilo profissional e os prazos aplicáveis.</p>
+<h2>Seus direitos</h2><p>Nos termos da Lei Geral de Proteção de Dados, você pode solicitar informações sobre o tratamento, acesso e correção dos seus dados, além de outras providências cabíveis. Utilize os canais de contato do escritório.{site.email&&<> O e-mail de contato é <a href={'mailto:'+site.email}>{site.email}</a>.</>}</p>
+<Link className="button ink-button" to="/#contato">Ir ao contato</Link></article></div></div>}

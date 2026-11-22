@@ -1,0 +1,10 @@
+@theme {
+  --color-ink: #10120f;
+  --color-graphite: #1b1d19;
+  --color-ivory: #f4efe6;
+  --color-gold: #c9ab76;
+  --color-bronze: #806940;
+  --font-display: "Cormorant Garamond Variable", Georgia, serif;
+  --font-sans: "Manrope Variable", Arial, sans-serif;
+}
+:root{--ink:#10120f;--graphite:#1b1d19;--ivory:#f4efe6;--gold:#cfb27f;--gold-light:#e3cca2;--bronze:#806940;--display:"Cormorant Garamond Variable",Georgia,serif;--sans:"Manrope Variable",Arial,sans-serif;--hair:rgba(200,174,126,.29);--frame:min(88.8vw,1440px);--section-pad:clamp(80px,8.3vw,144px);--marquee-skew:0deg}
